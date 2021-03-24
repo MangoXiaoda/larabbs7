@@ -1,9 +1,21 @@
-@extends('layouts.app')
-@section('title', '首页')
+@extends('layouts.admin')
+<!-- @section('title', '首页') -->
 
 @section('content')
-    <h1>这里是首页</h1>
+
+<div>
+    <el-tag type="success">@{{ info }}</el-tag>
+</div>
+
 @stop 
+
+@section('set_admin_data')
+
+<script>
+    admin_data.info = @json($info);
+</script>
+
+@stop
 
 
 
