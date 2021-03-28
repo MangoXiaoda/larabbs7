@@ -5,6 +5,7 @@
 
 <div>
     <el-tag type="success">@{{ info }}</el-tag>
+    6666测试git回滚
 </div>
 
 @stop 
